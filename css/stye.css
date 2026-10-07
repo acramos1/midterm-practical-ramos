@@ -1,6 +1,6 @@
-/* Design tokens */
+
 :root {
-    /* Colour roles */
+    
     --color-background: #fff5f7;
     --color-surface: #ffffff;
     --color-text: #59434a;
@@ -12,14 +12,14 @@
     --color-border: #d9b8c0;
     --color-focus: #7c3aed;
 
-    /* Spacing scale */
+    
     --space-xs: 0.25rem;
     --space-sm: 0.5rem;
     --space-md: 1rem;
     --space-lg: 1.5rem;
     --space-xl: 2.5rem;
 
-    /* Type scale */
+    
     --text-small: 0.875rem;
     --text-body: 1rem;
     --text-large: 1.25rem;
@@ -27,7 +27,7 @@
     --text-heading: 1.7rem;
 }
 
-/* Basic page styling */
+
 * {
     box-sizing: border-box;
 }
@@ -100,7 +100,7 @@ nav a:focus {
     outline-offset: 3px;
 }
 
-/* Main layout */
+
 main {
     width: 85%;
     max-width: 1000px;
@@ -126,7 +126,7 @@ section h2 {
     text-align: center;
 }
 
-/* Image */
+
 .profile-image {
     width: 80px;
     height: 80px;
@@ -140,7 +140,7 @@ figcaption {
     font-size: var(--text-small);
 }
 
-/* Reusable component 2: highlight cards */
+
 .highlights {
     display: flex;
     flex-wrap: wrap;
@@ -161,7 +161,7 @@ figcaption {
     box-shadow: 0 4px 10px #ead6da;
 }
 
-/* Table */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -225,7 +225,7 @@ textarea:focus {
     outline-offset: 2px;
 }
 
-/* Interactive button */
+
 button {
     padding: var(--space-sm) var(--space-lg);
     background-color: var(--color-primary);
@@ -246,7 +246,7 @@ button:focus {
     outline-offset: 3px;
 }
 
-/* Footer */
+
 footer {
     padding: var(--space-lg);
     background-color: var(--color-primary-dark);
@@ -254,7 +254,7 @@ footer {
     text-align: center;
 }
 
-/* Mobile layout */
+
 @media (max-width: 600px) {
     header h1 {
         font-size: 2rem;
