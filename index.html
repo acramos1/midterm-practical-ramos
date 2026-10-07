@@ -3,78 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midterm Practical</title>
+    <title>Alyanna's Portfolio ♡</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Welcome to My Website</h1>
-        <p>A website created for my midterm practical task.</p>
+        <h1>Welcome to My Portfolio ♡</h1>
+        <p>Hi! I'm Alyanna ✨</p>
+        <p>Marketing student • Creative • Future café owner ☕</p>
     </header>
 
     <nav aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#information">Information</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <main>
-        <section id="home">
-            <h2>About the Website</h2>
 
-            <article>
-                <h3>Introduction</h3>
+        <section class="welcome">
+            <h2>🌷 Hello, I'm Alyanna!</h2>
 
-                <figure>
-                    <img src="https://pet-health-content-media.chewy.com/wp-content/uploads/2026/01/03212614/2599600-2026-01-BLG-BreedsBatch5-Cat-Ragdoll-Hero.jpg" 
-                         alt="Ragdoll Cat">
-                    <figcaption>Image related to the website topic.</figcaption>
-                </figure>
+            <figure>
+                <img 
+                    src="https://i.pinimg.com/736x/f3/e8/f5/f3e8f5909944110e75a3e7f9f51ca57f.jpg"
+                    alt="Pink aesthetic decorative image"
+                    class="profile-image"
+                >
+                <figcaption>Aesthetic image representing my creative personality.</figcaption>
+            </figure>
 
-                <p>
-                    This website provides useful information about the selected topic.
-                </p>
-            </article>
+            <p>
+                Welcome to my little corner of the internet! I'm a 2nd year
+                BSBA Marketing Management student at FEU Diliman who loves
+                creativity, design, and discovering new ideas.
+            </p>
+
+            <p>
+                This portfolio is a collection of things about me, including
+                my interests, skills, goals, and the things I enjoy doing.
+            </p>
         </section>
 
-        <section id="information">
-            <h2>Information Table</h2>
+        <section>
+            <h2>🎀 A Little About Me</h2>
+
+            <p>
+                I'm a friendly and creative person who enjoys working on
+                projects that let me express my ideas. I like combining
+                creativity and business, which is why marketing and
+                multimedia design interest me.
+            </p>
+
+            <p>
+                Outside school, I enjoy baking, taking photos and videos,
+                exploring cafés, trying matcha drinks, watching K-dramas,
+                and collecting perfumes.
+            </p>
+        </section>
+
+        <section>
+            <h2>✨ My Interests</h2>
+
+            <div class="highlights">
+
+                <article class="highlight-box">
+                    <h3>📣 Marketing</h3>
+                    <p>
+                        I enjoy learning about branding, social media,
+                        advertising, and understanding customers.
+                    </p>
+                </article>
+
+                <article class="highlight-box">
+                    <h3>🎨 Design</h3>
+                    <p>
+                        I enjoy creating visual content and exploring
+                        different creative ideas.
+                    </p>
+                </article>
+
+                <article class="highlight-box">
+                    <h3>📸 Photography</h3>
+                    <p>
+                        I love taking photos and videos to capture
+                        special moments.
+                    </p>
+                </article>
+
+                <article class="highlight-box">
+                    <h3>🍵 Cafés and Matcha</h3>
+                    <p>
+                        I enjoy discovering cute cafés and trying
+                        different matcha drinks and desserts.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>My Skills</h2>
 
             <table>
-                <caption>List of Information</caption>
+                <caption>Alyanna's Skills</caption>
 
                 <thead>
                     <tr>
-                        <th scope="col">Item</th>
+                        <th scope="col">Skill</th>
                         <th scope="col">Description</th>
-                        <th scope="col">Status</th>
+                        <th scope="col">Level</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <td>Item One</td>
-                        <td>First item description</td>
-                        <td>Available</td>
+                        <td>Creativity</td>
+                        <td>Creating ideas and visual content</td>
+                        <td>Good</td>
                     </tr>
 
                     <tr>
-                        <td>Item Two</td>
-                        <td>Second item description</td>
-                        <td>Available</td>
+                        <td>Communication</td>
+                        <td>Sharing ideas clearly with others</td>
+                        <td>Good</td>
+                    </tr>
+
+                    <tr>
+                        <td>Photography</td>
+                        <td>Taking and editing photos</td>
+                        <td>Developing</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section id="contact">
-            <h2>Contact Form</h2>
+        <section>
+            <h2>Contact Me</h2>
 
             <form action="#" method="post">
                 <fieldset>
-                    <legend>Send us a message</legend>
+                    <legend>Send a Message</legend>
 
                     <p>
                         <label for="name">Full Name:</label>
@@ -87,18 +159,29 @@
                     </p>
 
                     <p>
+                        <label for="reason">Reason for Contact:</label>
+                        <select id="reason" name="reason" required>
+                            <option value="">Select one</option>
+                            <option value="question">Question</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="collaboration">Collaboration</option>
+                        </select>
+                    </p>
+
+                    <p>
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </p>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit">Send Message</button>
                 </fieldset>
             </form>
         </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Your Name. All rights reserved.</p>
+        <p>&copy; 2026 Alyanna. All rights reserved.</p>
     </footer>
 
 </body>
